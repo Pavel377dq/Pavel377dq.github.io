@@ -1,0 +1,52 @@
+
+@media (min-width: 320px) { 
+
+   
+   
+      .divider {
+         width: 2px;
+         height: 32px;
+         background: #EAEAEA;
+         border-radius: 1px;
+         margin-left: 16.73px;
+      }
+   
+
+   
+   
+    }
+   
+    @media (min-width: 768px) {
+      
+
+   
+      .divider {
+         width: 2px;
+         height: 32px;
+         background: #EAEAEA;
+         border-radius: 1px;
+         margin-left: 480px;
+      }
+      
+
+      
+    
+    }
+   
+    @media (min-width: 1120px) {
+   
+   
+
+      
+         .divider {
+            width: 2px;
+            height: 32px;
+            background: #EAEAEA;
+            border-radius: 1px;
+            margin-left: 780px;
+         }
+      
+   
+   
+   
+    }

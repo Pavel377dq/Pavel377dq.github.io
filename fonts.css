@@ -1,0 +1,9 @@
+@font-face {
+   font-family: TTLakes; /* Гарнитура шрифта */
+   src: url(TTLakes/TTLakes-Medium.ttf); /* Путь к файлу со шрифтом */
+  }
+
+html {
+   font-family: TTLakes;
+}
+

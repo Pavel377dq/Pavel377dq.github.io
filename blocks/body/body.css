@@ -1,0 +1,37 @@
+@media (min-width: 320px) { 
+
+   
+
+      body {
+         width: 320px;
+         height: 597px;
+      }
+   
+
+   
+    }
+   
+    @media (min-width: 768px) {
+      
+
+   
+      body {
+         width: 768px;
+         height: 504px;
+      }
+   
+   
+    }
+   
+    @media (min-width: 1120px) {
+   
+
+      
+         body {
+            width: 1120px;
+            height: 535px;
+         }
+      
+
+   
+    }

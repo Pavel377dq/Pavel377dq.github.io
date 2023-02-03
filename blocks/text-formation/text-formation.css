@@ -1,0 +1,46 @@
+
+@media (min-width: 320px) { 
+
+   
+
+   .text-formation {
+      white-space: pre-wrap;
+      height: 90px;
+      overflow: hidden;
+   }
+   
+   
+    }
+   
+    @media (min-width: 768px) {
+      
+
+   
+   .text-formation {
+      white-space: pre-wrap;
+      height: 160px;
+      width: 312px;
+      overflow: hidden;
+      padding-top:  0;
+      margin-top:0;
+   }
+    }
+   
+    @media (min-width: 1120px) {
+   
+
+      
+      
+      .text-formation {
+         white-space: pre-wrap;
+         height: 160px;
+         width: 490px;
+         overflow: hidden;
+         padding-top:  0;
+         margin-top:0;
+      }
+   
+   
+   
+   
+    }
