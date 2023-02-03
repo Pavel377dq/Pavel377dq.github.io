@@ -41,3 +41,46 @@
    
    
     }
+
+    
+@media (min-width: 320px) { 
+
+   
+
+   .live-icon {
+      width: 320px;
+   }
+   
+  
+
+ }
+
+ @media (min-width: 768px) {
+
+
+
+
+   .live-icon {
+      width: 360px;
+   }
+   
+
+
+
+
+ }
+
+ @media (min-width: 1120px) {
+
+
+
+      .live-icon {
+         width: 531.35px;
+      }
+
+   
+    
+  
+
+
+ }
