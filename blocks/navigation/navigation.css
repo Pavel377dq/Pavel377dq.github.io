@@ -2,12 +2,21 @@
 
 @media (min-width: 320px) { 
       
-      .navigation {
-         width: 320px;
-         overflow:hidden;
-         margin:0;
-      }
-   
+        
+   .navigation {
+      width: 320px;
+      margin:0;
+
+      overflow: auto;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+   }
+
+
+   .navigation::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+}
 
    
    
@@ -17,14 +26,21 @@
       
 
    
-  
-   
+
       .navigation {
          width: 768px;
          overflow:hidden;
          margin:0;
+         overflow: auto;
+         -ms-overflow-style: none;
+         scrollbar-width: none;
       }
    
+      
+      .navigation::-webkit-scrollbar {
+         width: 0;
+         height: 0;
+   }
 
     }
    
@@ -32,14 +48,22 @@
    
    
       
-       
+      .navigation {
+         width: 1120px;
+         overflow:hidden;
+         margin:0;
+
+         overflow: auto;
+         -ms-overflow-style: none;
+         scrollbar-width: none;
+      }
+
       
-         .navigation {
-            width: 1120px;
-            overflow:hidden;
-            margin:0;
-         }
-      
+   .navigation::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+}
+
          
 
      
