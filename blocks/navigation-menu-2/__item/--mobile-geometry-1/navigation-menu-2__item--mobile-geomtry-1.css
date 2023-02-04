@@ -8,7 +8,7 @@
    .navigation-menu-2__item--mobile-geometry-1 {
       width: 246px;
       height: 40px;
-      margin-left:16px;
+      margin-left:0;
       border:solid 2px #B8FFEC;
    
    }
@@ -23,7 +23,7 @@
    .navigation-menu-2__item--mobile-geometry-1 {
       width: 248px;
       height: 40px;
-      margin-left:24px;
+      margin-left:0;
       border:solid 2px #B8FFEC;
    
    }
@@ -38,7 +38,7 @@
       .navigation-menu-2__item--mobile-geometry-1 {
          width: 233px;
          height: 40px;
-         margin-left:22.64px;
+         margin-left:0;
          border:solid 2px #B8FFEC;
       
       }

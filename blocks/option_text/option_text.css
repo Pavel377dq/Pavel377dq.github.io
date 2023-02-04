@@ -1,0 +1,39 @@
+
+
+@media (min-width: 320px) { 
+
+   
+  
+   .option_text {
+      display: none;
+   }
+    
+   
+   
+   
+      
+       }
+      
+       @media (min-width: 768px) {
+     
+      
+   .option_text {
+      display: none;
+   }
+   
+       }
+      
+       @media (min-width: 1120px) {
+      
+      
+    
+   
+      
+   .option_text {
+      display: block;
+      white-space: nowrap;  
+      font-weight: 400;
+      
+   }
+
+}

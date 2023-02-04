@@ -4,7 +4,8 @@
       <meta charset="utf-8" />
 
       <!--GITHUB PAGES не поддерживает файлы с нижнего подчеркивания(даже nojekyll не помог) поэтому все стили по БЭМ скопировал в style.css-->
-      <link rel="stylesheet" type="text/css" href="Pavel377dq.github.io/fonts.css">
+      <!--Не подключил все стили по БЭМ-->
+      <link rel="stylesheet" type="text/css" href="fonts.css">
       <link rel="stylesheet" type="text/css" href="Pavel377dq.github.io/blocks/body/body.css">
       <link rel="stylesheet" type="text/css" href="Pavel377dq.github.io/blocks/button-menu/button-menu.css">
       <link rel="stylesheet" type="text/css" href="Pavel377dq.github.io/blocks/button-menu/__rect/--short/button-menu__rect--short.css">
@@ -53,38 +54,61 @@
          </div>
                
          <img src="icon.png" class="main-icon">
+
          <div class="button-menu button-menu--margin-right-left-1 button-menu--display">
             <img src="phone_icon.png" class="button-menu__phone-icon">
          </div>
+
          <div class="button-menu button-menu--margin-right-2 button-menu--display">
             <img src="message_icon.png" class="button-menu__message-icon">
          </div>
+
          <div class="button-menu button-menu--margin-right-3 button-menu--display">
             <img src="person_icon.png" class="button-menu__person-icon">
          </div>
+
          <div class="divider"></div>
-           <p class="option_text option_text--margin-left-1">Оставить заявку</p> 
-           
+
+
+          
          <div class="button-menu button-menu--margin-left-1">
          <img src="icon-service.png" class="button-menu__service-icon">
          </div>
-         <p class="option_text option_text--margin-left-2">Статус ремонта</p> 
+
+
          <div class="button-menu button-menu--margin-left-2">
             <img src="icon-search.png" class="button-menu__search-icon">
-            </div>
+         </div>
+
+
       </header>
+
+
       <nav class="navigation">
-       
-         <h1 class="navigation__header-1">Услуги и сервисы</h1>
-         
+         <div class="top-navigation-menu">
+            <h1 class="navigation__header-1">Услуги и сервисы</h1>
+
+            <p class="option_text option_text--margin-left-1">Оставить заявку</p> 
+            <div class="button-menu button-menu--margin-left-1 button-menu--display-top-menu">
+               <img src="icon-service.png" class="button-menu__service-icon">
+            </div>
+
+            <p class="option_text option_text--margin-left-2">Статус ремонта</p> 
+            <div class="button-menu button-menu--margin-left-2 button-menu--display-top-menu">
+               <img src="icon-search.png" class="button-menu__search-icon">
+            </div>
+         </div>
+         <!--С jusify-conten в flex navigation-menu-2__item--mobile-geometry-n лишнее, но на всякий случай оставлю (В файлах по бэм)-->
          <div class="navigation-menu-2">
             <div class="navigation-menu-2__item navigation-menu-2__item--mobile-geometry-1"><p class="navigation-menu-2__text" ><pre> Ремонтируемые бренды</pre></p></div>
             <div class="navigation-menu-2__item navigation-menu-2__item--mobile-geometry-2"><p class="navigation-menu-2__text" ><pre> Дополнительные услуги</pre></p></div>
             <div class="navigation-menu-2__item navigation-menu-2__item--mobile-geometry-3"><p class="navigation-menu-2__text" ><pre> Цены на услуги</pre></p></div>
             <div class="navigation-menu-2__item navigation-menu-2__item--mobile-geometry-4"><p class="navigation-menu-2__text" ><pre> Адреса сервисных центров </pre></p></div>
             <div class="navigation-menu-2__item navigation-menu-2__item--mobile-geometry-5"><p class="navigation-menu-2__text" ><pre> Специальные цены</pre></p></div>
-           
          </div>
+
+         <p class="option_text option_text--margin-left-3">Отзывы</p>
+
       </nav>
       <main>
          <section class="page-service">
