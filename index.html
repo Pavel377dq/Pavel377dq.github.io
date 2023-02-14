@@ -7,99 +7,108 @@
       <link rel="stylesheet" type="text/css" href="fonts/fonts.css">
       <link rel="stylesheet" type="text/css" href="styles.css">
    
-
-     
-      
-
    </head>
    <body>
       <header class="header">
-         <div class="header-wrap header-wrap--geometry-1">
+         <div class="wrap header__wrap-1">
+
             <div class="button-menu">
-             <div class="button-menu__rect"></div>
-               <div class="button-menu__rect button-menu__rect--very-short"></div>
-             <div class="button-menu__rect button-menu__rect--short">
-
-             </div>
-          </div>
+               <div class="button-menu__rect"></div>
+               <div class="button-menu__rect button-menu__rect--size-very-short"></div>
+               <div class="button-menu__rect button-menu__rect--size-short"></div>
+            </div>
                
-          <img src="images/Group.svg" class="main-icon">
-       </div> 
+            <img src="images/Group.svg" class="main-icon wrap__main-icon">
+         </div> 
 
-       <div class="divider-2"></div>
+         <div class="divider-2"></div>
          
-         <div class="header-wrap header-wrap--geometry-2">
-            <div class="button-menu button-menu--margin-right-left-1 button-menu--display">
+         <div class="wrap header__wrap-2">
+            <div class="button-menu wrap__button-1 button-menu--display-none button-menu--display-block">
                <img src="images/phone_icon.svg" class="button-menu__phone-icon">
-          </div>
+            </div>
        
-            <div class="button-menu button-menu--margin-right-2 button-menu--display">
+            <div class="button-menu wrap__button-2 button-menu--display-block button-menu--display-none">
              <img src="images/message_icon.svg" class="button-menu__message-icon">
             </div>
-         <!--button-menu--margin-right-3-->
-            <div class="button-menu button-menu--margin-right-3 button-menu--display">
+         
+            <div class="button-menu wrap__button-3 button-menu--display-none button-menu--display-block">
                <img src="images/person_icon.svg" class="button-menu__person-icon">
             </div>
 
             <div class="divider-1"></div>
 
          
-         <!--button-menu--margin-left-1-->
-            <div class="button-menu button-menu--margin-left-1">
-            <img src="images/icon-service.svg" class="button-menu__service-icon">
+         
+            <div class="button-menu wrap__button-4">
+               <img src="images/icon-service.svg" class="button-menu__service-icon">
             </div>
 
-            <!--button-menu--margin-left-2-->
-            <div class="button-menu button-menu--margin-left-2">
+            
+            <div class="button-menu wrap__button-5">
                <img src="images/icon-search.svg" class="button-menu__search-icon">
             </div>
+
          </div>
 
       </header>
 
 
       <nav class="navigation">
-         <div class="top-navigation-menu">
-            <h1 class="navigation__header-1">Услуги и сервисы</h1>
 
-            <div class="navigation-wrap-1">
-               <p class="option_text option_text--margin-left-1">Оставить заявку</p> 
-               <div class="button-menu button-menu--margin-left-1 button-menu--display-top-menu">
+         <div class="top-menu">
+
+            <h1 class="header-1 top-menu__header-1">Услуги и сервисы</h1>
+
+            <div class="wrap top-menu__wrap">
+
+               <p class="option_text wrap__option_text">Оставить заявку</p> 
+               <div class="button-menu wrap__button-4 button-menu--display-top-menu">
                   <img src="images/icon-service.svg" class="button-menu__service-icon">
                </div>
 
-               <p class="option_text option_text--margin-left-2">Статус ремонта</p> 
-               <div class="button-menu button-menu--margin-left-2 button-menu--display-top-menu">
+               <p class="option_text wrap__option_text-2">Статус ремонта</p> 
+               <div class="button-menu wrap__button-5 button-menu--display-top-menu">
                   <img src="images/icon-search.svg" class="button-menu__search-icon">
                </div>
+
             </div>
+
          </div>
-         <div class="navigation-wrap-2">
-            <div class="navigation-menu-2">
-               <div class="navigation-menu-2__item navigation-menu-2__item--aqua ">Ремонтируемые бренды</div>
-               <div class="navigation-menu-2__item">Дополнительные услуги</div>
-               <div class="navigation-menu-2__item">Цены на услуги</div>
-               <div class="navigation-menu-2__item">Адреса сервисных центров</div>
-               <div class="navigation-menu-2__item">Специальные цены</div>
-            </div>
+
+         <div class="wrap-2 navigation__wrap-2">
+            <ul class="menu">
+               <li class="menu__item menu__item--aqua "><a>Ремонтируемые бренды</a></li>
+               <li class="menu__item"><a>Дополнительные услуги</a></li>
+               <li class="menu__item"><a>Цены на услуги</a></li>
+               <li class="menu__item"><a>Адреса сервисных центров</a></li>
+               <li class="menu__item"><a>Специальные цены</a></li>
+            </ul>
          </div>
-         <p class="option_text option_text--margin-left-3">Отзывы</p>
+
+         <p class="option_text navigation__option_text">Отзывы</p>
 
       </nav>
+
       <main>
          <section class="page-service">
+
             <div class="page-service__text">
-                           <p class="text-formation">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+
+                           <p class="page-service__text-formation">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
 
                               Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
-                              
                            </p>
+
                            <div class="next">
                               <img src="images/expand.svg" class="next__icon">
                               <p class="next__text">Читать далее</p>
                            </div>
+
             </div>
+
             <img src="images/live_icon.jpg" class="live-icon">
+
          </section>
       </main>
    </body>
