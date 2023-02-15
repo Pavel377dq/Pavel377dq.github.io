@@ -7,3 +7,8 @@ html {
    font-family: TTLakes;
 }
 
+* {/*для span например шрифт не работает если не унаследовать или не задать напрямую*/
+
+   font-family: inherit;
+}
+
