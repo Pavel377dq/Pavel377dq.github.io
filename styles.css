@@ -476,6 +476,8 @@ html {
    
 
    body {
+      margin:0;
+      padding:0;
       min-width: 320px;
       height: 597px;
    }
@@ -489,6 +491,8 @@ html {
 
 
    body {
+      margin:0;
+      padding:0;
       min-width: 768px;
       height: 504px;
    }
@@ -501,6 +505,8 @@ html {
 
    
       body {
+         margin:0;
+         padding:0;
          min-width: 1120px;
          height: 535px;
       }
@@ -677,6 +683,8 @@ html {
       height: 88px;
       margin:0;
       margin-bottom: 14px;
+    
+      
    } 
       
    
@@ -692,6 +700,7 @@ html {
       height: 88px;
       margin:0;
       margin-bottom: 20px;
+      
     
    } 
    
