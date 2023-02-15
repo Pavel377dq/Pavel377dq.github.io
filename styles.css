@@ -1,6 +1,10 @@
+html {
+   box-sizing: border-box;
+}
 
-
-
+*, *:before, *:after {
+   box-sizing: inherit;
+}
 
 .button-menu {
    height: 40px;
@@ -8,57 +12,57 @@
    border-radius: 50%;
    background: #FF3E79;
    border: solid #FF3E79;
+   padding: 0;
+   position: relative;
+   
 
 }
 
 
 
-.button-menu__rect {
-   width: 18px;
-   height: 2px;
-   border-radius: 1px;
-   background: #FFFFFF;
-   margin-bottom: 5px;
-   margin-left: 11px;
-
-}
-
-.button-menu__rect--size-short {
-
-   width: 14px;
-}
-
-.button-menu__rect--size-very-short {
-
-   width: 10px;
-}
-
-.button-menu__rect:nth-child(1) {
-   margin-top: 12px;
+.button-menu__rectangles {
+   position: absolute;
+   top: 10px;
+   left: 9.5px;
+   width: 16px;
+   height: auto;
+   padding:0;
+   margin:0;
 }
 
 
 .button-menu__search-icon{
    width: 16px;
    height: 20px;
-   margin-left: 12px;
-   margin-top: 10px;
+   position:  absolute;
+   top: 8px;
+   left: 9.5px;
+   padding: 0;
+   margin:0;
 }
 
 .button-menu__phone-icon {
 
    width: 17.96px;
    height:17.96px;
-   margin-left: 11px;
-   margin-top: 11px;
+   position: absolute;   
+   top: 8px;
+   left: 9px;
+   padding:0;
+   margin:0;
+
 }
 
 .button-menu__message-icon {
 
    width: 20px;
    height:20px;
-   margin-left: 10px;
-   margin-top: 11px;
+   position: absolute;
+   top: 9px;
+   left: 8.5px;
+   padding:0;
+   margin:0;
+
 }
 
 
@@ -66,15 +70,24 @@
 
    width: 20px;
    height:18px;
-   margin-left: 10px;
-   margin-top: 10px;
+   position:absolute;
+   top: 8.5px;
+   left: 8px;
+   padding:0;
+   margin:0;
+   
 }
 
 
 .button-menu__service-icon {
-   width: 20px;
+   padding:0;
+   margin:0;
+   width: 19px;
    height:20px;
-   margin: 10px;
+   position:absolute;
+   top: 9px;
+   left: 9px;
+
 }
 
 
@@ -155,10 +168,16 @@
 .wrap {
 
    display: flex;
+   align-items: center;
   
 
 }
 
+
+.wrap__button-menu {
+   margin:0;
+   padding:0;
+}
 
 
 .wrap__button-1 {
@@ -178,10 +197,36 @@
 }
 
 
-.wrap__button-4 {
+
+
+
+ 
+@media (min-width: 768px) {
+  
+   .wrap__button-4 {
    
-   margin-left: 20px;
+      margin-left: 20px;
+    
+    }
+
 }
+  
+@media (min-width: 1120px) and (max-width: 1920px) {
+  
+  
+    
+   .wrap__button-4 {
+   
+      margin-left: 8px;
+    
+    }
+     
+
+  
+  
+  
+}
+
 
 .wrap__button-5 {
    margin-left: 16px;
@@ -302,7 +347,7 @@
    height: 40px;
    width:304px;
    padding-left: 16px;
-   padding-top: 8px;
+   
 }
 
 
@@ -312,19 +357,55 @@
    display: flex;
    min-width: 320px;
    justify-content: space-between;
+   align-items: center;
+   
 }
+
+
+
+@media (min-width: 320px) {
+
+   .navigation__top-menu{
+      margin-bottom: 20px;
+   }
+
+
+}
+  
+   @media (min-width: 768px) {
+
+      .navigation__top-menu{
+         margin-bottom: 30px;
+      }
+
+   }
+  
+     
+  @media (min-width: 1120px) and (max-width: 1920px) {
+
+   .navigation__top-menu{
+      margin-bottom: 6px;
+   }
+
+}
+  
+
+    
+
+
 
 
 .top-menu__header-1 {
    
-   margin:0;
-   margin-bottom: 24px;  
+   margin:0; 
+   
 }
 
 
 
 .top-menu__wrap{
    margin-right: 32px;
+   height: 100%;
 }
 
 
@@ -595,6 +676,7 @@
       min-width: 320px;
       height: 88px;
       margin:0;
+      margin-bottom: 14px;
    } 
       
    
@@ -609,6 +691,7 @@
       min-width: 768px;
       height: 88px;
       margin:0;
+      margin-bottom: 20px;
     
    } 
    
