@@ -1,115 +1,116 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <meta charset="utf-8" />
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
 
-    
-      <link rel="stylesheet" type="text/css" href="fonts/fonts.css">
-      <link rel="stylesheet" type="text/css" href="styles.css">
-   
-   </head>
-   <body>
-      <header class="header">
-         <div class="wrap header__wrap-1">
+  <body>
+    <header class="header">
+      <div class="wrap header__wrap-margin-left divider-one">
+        <button class="button wrap__button">
+          <img src="images/rectangles.svg" class="button__rectangles" />
+        </button>
 
-            <button class="button-menu wrap__button-menu">
-               <img src="images/rectangles.svg" class="button-menu__rectangles">
+        <img src="images/Group.svg" class="main-icon wrap__main-icon" />
+      </div>
+
+      <div class="wrap header__wrap-margin-right divider-two">
+        <ul class="list-buttons">
+          <li>
+            <button
+              class="button list-buttons__button button--display-none button--display-block"
+            >
+              <img src="images/phone_icon.svg" class="button__phone-icon" />
             </button>
-               
-            <img src="images/Group.svg" class="main-icon wrap__main-icon">
-         </div> 
+          </li>
 
-         <div class="divider-2"></div>
-         
-         <div class="wrap header__wrap-2">
-            <button class="button-menu wrap__button-1 button-menu--display-none button-menu--display-block">
-               <img src="images/phone_icon.svg" class="button-menu__phone-icon">
+          <li>
+            <button
+              class="button list-buttons__button button--display-block button--display-none"
+            >
+              <img src="images/message_icon.svg" class="button__message-icon" />
             </button>
-       
-            <button class="button-menu wrap__button-2 button-menu--display-block button-menu--display-none">
-             <img src="images/message_icon.svg" class="button-menu__message-icon">
+          </li>
+
+          <li>
+            <button
+              class="button list-buttons__button button--display-none button--display-block"
+            >
+              <img src="images/person_icon.svg" class="button__person-icon" />
             </button>
-         
-            <button class="button-menu wrap__button-3 button-menu--display-none button-menu--display-block">
-               <img src="images/person_icon.svg" class="button-menu__person-icon">
+          </li>
+        </ul>
+
+        <button class="button wrap__button-one">
+          <img src="images/icon-service.svg" class="button__service-icon" />
+        </button>
+
+        <button class="button wrap__button-two">
+          <img src="images/icon-search.svg" class="button__search-icon" />
+        </button>
+      </div>
+    </header>
+
+    <header class="navigation">
+      <div class="top-menu navigation__top-menu">
+        <h1 class="header-inner top-menu__header-inner">Услуги и сервисы</h1>
+
+        <div class="wrap top-menu__wrap">
+          <button class="top-menu__button">
+            <span class="option_text wrap__option_text-1">Оставить заявку</span>
+            <button class="button wrap__button-one button--display-top-menu">
+              <img src="images/icon-service.svg" class="button__service-icon" />
             </button>
+          </button>
 
-            <div class="divider-1"></div>
-
-         
-         
-            <button class="button-menu wrap__button-4">
-               <img src="images/icon-service.svg" class="button-menu__service-icon">
+          <button class="top-menu__button">
+            <span class="option_text wrap__option_text-2">Статус ремонта</span>
+            <button class="button wrap__button-two button--display-top-menu">
+              <img src="images/icon-search.svg" class="button__search-icon" />
             </button>
+          </button>
+        </div>
+      </div>
 
-            
-            <button class="button-menu wrap__button-5">
-               <img src="images/icon-search.svg" class="button-menu__search-icon">
-            </button>
-
-         </div>
-
-      </header>
-
-
-      <nav class="navigation">
-
-         <div class="top-menu navigation__top-menu">
-
-            <h1 class="header-1 top-menu__header-1">Услуги и сервисы</h1>
-
-            <div class="wrap top-menu__wrap">
-
-               <p class="option_text wrap__option_text">Оставить заявку</p> 
-               <button class="button-menu wrap__button-4 button-menu--display-top-menu">
-                  <img src="images/icon-service.svg" class="button-menu__service-icon">
-               </button>
-
-               <p class="option_text wrap__option_text-2">Статус ремонта</p> 
-               <button class="button-menu wrap__button-5 button-menu--display-top-menu">
-                  <img src="images/icon-search.svg" class="button-menu__search-icon">
-               </button>
-
-            </div>
-
-         </div>
-
-         <div class="wrap-2 navigation__wrap-2">
-            <ul class="menu">
-               <li class="menu__item menu__item--aqua "><a>Ремонтируемые бренды</a></li>
-               <li class="menu__item"><a>Дополнительные услуги</a></li>
-               <li class="menu__item"><a>Цены на услуги</a></li>
-               <li class="menu__item"><a>Адреса сервисных центров</a></li>
-               <li class="menu__item"><a>Специальные цены</a></li>
-            </ul>
-         </div>
-
-         <button class="reviews">
-           <span class="option_text navigation__option_text">Отзывы</span>
-         </button>
-
+      <nav class="navigation__wrap">
+        <ul class="menu">
+          <li class="menu__item menu__item--aqua">
+            <a href="#">Ремонтируемые бренды</a>
+          </li>
+          <li class="menu__item"><a href="#">Дополнительные услуги</a></li>
+          <li class="menu__item"><a href="#">Цены на услуги</a></li>
+          <li class="menu__item"><a href="#">Адреса сервисных центров</a></li>
+          <li class="menu__item"><a href="#">Специальные цены</a></li>
+          <li class="menu__item menu__item--new-line">
+            <a href="#">Отзывы</a>
+          </li>
+        </ul>
       </nav>
+    </header>
 
-      <main>
-         <section class="page-service">
+    <main>
+      <section class="page-service">
+        <div class="page-service__text">
+          <p class="page-service__text-formation">
+            Мы являемся авторизованным сервисным центром по ремонту техники
+            Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+            официальной гарантией производителя. 
+            <br><br>
+            Мы успешно работаем с 1992 года и заслужили репутацию надежного
+            партнера, что подтверждает большоеколичество постоянных клиентов.
+            Мы гордимся тем, что к намобращаются по рекомендациям и, в свою 
+            очередь, советуют нас родным и близким.
+          </p>
 
-            <div class="page-service__text">
+          <button class="next">
+            <img src="images/expand.svg" class="next__icon" />
+            <p class="next__text">Читать далее</p>
+          </button>
+        </div>
 
-                           <p class="page-service__text-formation">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-
-                              Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
-                           </p>
-
-                           <button class="next">
-                              <img src="images/expand.svg" class="next__icon">
-                              <p class="next__text">Читать далее</p>
-                           </button>
-
-            </div>
-
-            <img src="images/live_icon.jpg" class="live-icon">
-
-         </section>
-      </main>
-   </body>
+        <img src="images/live_icon.jpg" class="live-icon" />
+      </section>
+    </main>
+  </body>
 </html>
