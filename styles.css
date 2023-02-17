@@ -221,7 +221,7 @@ html {
 
 .menu {
   display: flex;
-  width: 1680px;
+  width: 1120px;
   flex-wrap: nowrap;
 
   padding-left: 20px;
@@ -233,7 +233,7 @@ html {
 @media (min-width: 768px) {
   .menu {
     display: flex;
-    width: 1680px;
+    width: 1120px;
     flex-wrap: nowrap;
     margin: 0;
     padding-left: 20px;
@@ -264,22 +264,23 @@ html {
   line-height: 36px;
   font-size: 16px;
   color: #7e7e82;
-  flex: 0 1 246px;
+  
+}
+
+@media(min-width: 1120px) {
+  .menu__item {
+    flex: 0 1 246px;
+  }
 }
 
 .menu__item--aqua {
+  flex: 0 1 246px;
   padding: 0;
   border: solid 2px #b8ffec;
 }
 
 .menu__item--new-line {
   margin-right: 0;
-}
-
-@media (min-width: 768px) {
-  .menu__item--new-line {
-    margin-right: 0;
-  }
 }
 
 @media (min-width: 1120px) {
