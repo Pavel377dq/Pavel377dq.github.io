@@ -5,29 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
-  <body class="body-left">
-    <aside class="left-menu">
-      <header class="header-left left-menu__header-left">
-        <div class="wrap header-left__wrap">
+  <body class="body-aside">
+    <aside class="pop-up-menu">
+      <header class="pop-up-menu__header-aside">
+        <div class="wrap pop-up-menu__wrap">
           <button class="button wrap__button">
             <img src="images/close.svg" class="button__close" />
           </button>
 
           <img
             src="images/Group.svg"
-            class="main-icon wrap__main-icon header-left__main-icon"
+            class="logo wrap__logo pop-up-menu__logo"
           />
         </div>
 
-        <button class="button header-left__button">
+        <button class="button pop-up-menu__button">
           <img
             src="images/new-search.svg"
-            class="new-search header-left__new-search"
+            class="new-search pop-up-menu__new-search"
           />
         </button>
       </header>
-
-      <ul class="list left-menu__list">
+      <nav class="pop-up-menu__navigation">
+      <ul class="pop-up-menu__list">
         <li class="list__item">
           <a class="list__text" href="#">Ремонт техники</a>
         </li>
@@ -49,9 +49,10 @@
         </li>
         <li class="list__item"><a class="list__text" href="#">Контакты</a></li>
       </ul>
+    </nav>
 
-      <footer class="footer-left">
-        <ul class="list-buttons footer-left__list-buttons">
+      <footer class="pop-up-menu__footer">
+        <ul class="list-buttons pop-up-menu__list-buttons">
           <li>
             <button class="button list-buttons__button">
               <img src="images/phone_icon.svg" class="button__phone-icon" />
@@ -71,17 +72,17 @@
           </li>
         </ul>
 
-        <div class="contacts footer-left__contacts">
-          <span class="contacts__mail">mail@cps.com</span>
-          <span class="contacts__number">8 800 890 8900</span>
-        </div>
+        <ul class="contacts pop-up-menu__contacts">
+          <li><a href="#" class="mail contacts__mail">mail@cps.com</a></li>
+          <li><a href="#" class="number contacts__number">8 800 890 8900</a></li>
+        </ul>
 
-        <div class="languages">
-          <span class="languages__item">RU</span>
-          <span class="languages__item">EN</span>
-          <span class="languages__item">CH</span>
+        <ul class="languages">
+          <li class="languages__item"><button class="languages__button">RU</button></li>
+          <li class="languages__item"><button class="languages__button">EN</button></li>
+          <li class="languages__item"><button class="languages__button">CH</button></li>
         </div>
-      </footer>
+      </ul>
     </aside>
   </body>
 </html>

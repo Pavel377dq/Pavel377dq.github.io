@@ -5,10 +5,24 @@
   /* Путь к файлу со шрифтом */
 }
 
+@font-face {
+  font-family: TTLakes-Bold;
+  /* Гарнитура шрифта */
+  src: url(fonts/TTLakes-Bold.ttf);
+  /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+  font-family: TTLakes-Regular;
+  /* Гарнитура шрифта */
+  src: url(fonts/TTLakes-Regular.ttf);
+  /* Путь к файлу со шрифтом */
+}
+
 html {
   box-sizing: border-box;
   max-width: 1980px;
-  font-family: TTLakes;
+  font-family: TTLakes, TTLakes-Bold, TTLakes-Regular;
 }
 
 .header {
@@ -426,12 +440,12 @@ body {
   }
 }
 
-.main-icon {
+.logo {
   width: 96.55px;
   height: 50.81px;
 }
 
-.wrap__main-icon {
+.wrap__logo {
   margin-left: 16.73px;
 }
 
@@ -572,66 +586,20 @@ a {
   list-style-type: none;
 }
 
-.header-left {
-  display: flex;
-  justify-content: space-between;
-}
 
-.header-left__wrap {
-  margin-left: 16px;
-}
-
-@media (min-width: 360px) {
-  .header-left__wrap {
-    margin-left: 24px;
-  }
-}
-
-.header-left__button {
-  margin-right: 16px;
-}
-
-@media (min-width: 360px) {
-  .header-left__button {
-    margin-right: 24px;
-  }
-}
-
-.header-left__main-icon {
-  width: 97px;
-  height: 51px;
-}
-
-@media (min-width: 360px) {
-  .header-left__main-icon {
-    width: 104px;
-    height: 55px;
-  }
-}
-
-@media (min-width: 768px) {
-  .header-left__main-icon {
-    width: 97px;
-    height: 51px;
-  }
-}
-
-.left-menu {
+.pop-up-menu {
   min-width: 320px;
   max-width: 360px;
   padding-top: 19px;
+  background-color: #FFF ;
 }
 
 @media (min-width: 768px) {
-  .left-menu {
+  .pop-up-menu {
     width: 320px;
     box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
     min-height: 1024px; /*body надо поставить min-width*/
   }
-}
-.list {
-  list-style-type: none;
-  padding: 0;
 }
 
 .list__item {
@@ -689,14 +657,14 @@ a {
   color: #7e7e82;
 }
 
-.footer-left__list-buttons {
+.pop-up-menu__list-buttons {
   padding-left: 0;
   margin-left: 16px;
   margin-bottom: 16px;
 }
 
 @media (min-width: 360px) {
-  .footer-left__list-buttons {
+  .pop-up-menu__list-buttons {
     margin-left: 24px;
   }
 }
@@ -706,9 +674,12 @@ a {
   flex-direction: column;
   height: 68px;
   justify-content: space-between;
+  padding:0;
+  margin:0;
+  list-style: none;
 }
 
-.footer-left__contacts {
+.pop-up-menu__contacts {
   margin-left: 16px;
   margin-bottom: 8px;
 }
@@ -721,18 +692,21 @@ a {
 }
 
 @media (min-width: 360px) {
-  .footer-left__contacts {
+  .pop-up-menu__contacts {
     margin-left: 24px;
   }
 }
 
 @media (min-width: 768px) {
-  .footer-left__contacts {
+  .pop-up-menu__contacts {
     margin-bottom: 40px;
   }
 }
 
 .languages {
+  padding: 0;
+  margin: 0;
+  list-style: none;
   margin-left: 16px;
 }
 
@@ -743,31 +717,93 @@ a {
 }
 
 .languages__item {
+  padding: 0;
   display: inline-block;
   margin-right: 3px;
+}
+
+.languages__button {
+  /* отображаем курсор в виде руки при наведении; некоторые
+  считают, что необходимо оставлять стрелочный вид для кнопок */
+  margin:0;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .languages__item:hover {
   color: #7e7e82;
 }
 
-.left-menu__list {
+.pop-up-menu {
   margin-bottom: 32px;
 }
 
+.pop-up-menu__list {
+  list-style-type: none;
+  padding: 0;
+}
+
+
 @media (min-width: 768px) {
-  .left-menu__list {
+  .pop-up-menu__list {
     margin-bottom: 268px;
   }
 }
 
-.left-menu__header-left {
+.pop-up-menu__header-aside {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 25px;
 }
 
 @media (min-width: 768px) {
-  .left-menu__header-left {
+  .pop-up-menu__header-aside {
     margin-bottom: 50px;
+  }
+}
+
+
+
+.pop-up-menu__wrap {
+  margin-left: 16px;
+}
+
+@media (min-width: 360px) {
+  .pop-up-menu__wrap {
+    margin-left: 24px;
+  }
+}
+
+.pop-up-menu__button {
+  margin-right: 16px;
+}
+
+@media (min-width: 360px) {
+  .pop-up-menu__button {
+    margin-right: 24px;
+  }
+}
+
+.pop-up-menu__logo {
+  width: 97px;
+  height: 51px;
+}
+
+@media (min-width: 360px) {
+  .pop-up-menu__logo {
+    width: 104px;
+    height: 55px;
+  }
+}
+
+@media (min-width: 768px) {
+  .pop-up-menu__logo {
+    width: 97px;
+    height: 51px;
   }
 }
 
@@ -854,6 +890,11 @@ a {
   opacity: 0.4;
 }
 
-.body-left {
+.body-aside {
   background-color: #f2f2f2;
+}
+
+.mail, .number {
+
+  text-decoration:none;
 }
