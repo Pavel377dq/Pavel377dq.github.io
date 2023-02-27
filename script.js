@@ -33,8 +33,8 @@ var isOpen= 0;
 
 
 
-var swiper = function(slidesInSight){
-  console.log(slidesInSight);
+var swiper = function(){
+  
   return new Swiper('.swiper', {
    // Optional parameters
   
@@ -42,30 +42,34 @@ var swiper = function(slidesInSight){
    spaceBetween: 16,
    // If we need pagination
    
-   slidesPerView: slidesInSight,
+   
    pagination: {
      el: '.swiper-pagination',
      clickable: true
    },
+
+   breakpoints: {
+    320:{
+      slidesPerView:1,
+    },
+    450:{
+      slidesPerView:1.7,
+    },
+    550:{
+      slidesPerView:2.1,
+    },
+    700:{
+      slidesPerView:2.4,
+    },
+
+   },
+
  
  });
-}
+};
 
-if (window.matchMedia("(min-width:0 ) and (max-width: 360px)").matches) {
-  swiperVariable = swiper(1.3);
-}
-if (window.matchMedia("(min-width:361px) and (max-width: 420px)").matches){
-  swiperVariable = swiper(1.7);
-}
-if(window.matchMedia("(min-width:421px ) and (max-width: 500px)").matches){
-  swiperVariable = swiper(2.1);
 
-}
-if(window.matchMedia("(min-width:501px ) and (max-width: 768px)").matches){
-  swiperVariable = swiper(2.5);
-
-}
-
+swiperVariable = swiper();
 
 window.addEventListener("resize", function() {
   if (window.matchMedia("(min-width:0 ) and (max-width: 768px)").matches) {
@@ -77,29 +81,10 @@ window.addEventListener("resize", function() {
 
     swiperWrapper[0].style = "overflow: visible";
     
-     
-    
-        
-        
-  if (window.matchMedia("(min-width:0 ) and (max-width: 360px)").matches) {
-    swiperVariable = swiper(1.3);
-  }
-  else if (window.matchMedia("(min-width:361px) and (max-width: 420px)").matches){
-    swiperVariable = swiper(1.7);
-  }
-  else if(window.matchMedia("(min-width:421px ) and (max-width: 500px)").matches){
-    swiperVariable = swiper(2.1);
-
-  }
-  else if(window.matchMedia("(min-width:501px ) and (max-width: 768px)").matches){
-    swiperVariable = swiper(2.5);
-
-  }
-     
+    if(swiperVariable ===undefined){
+      swiperVariable = swiper();
+    }
       
-
-
-
   } 
 });
 
@@ -108,10 +93,11 @@ window.addEventListener("resize", function() {
      
         if(swiperVariable!==undefined){
             console.log("good good")
-          swiperVariable.destroy(true, true);
-          swiperVariable = undefined;
-        
+            swiperVariable.destroy(true, true);
+            swiperVariable = undefined;
         }
+        
+   
         
  
       
