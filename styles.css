@@ -307,14 +307,14 @@ html {
   background-color: #f8f8f8;
 }
 
-.icon {
+.next__icon {
   width: 24px;
   height: 24px;
 
   margin-top: 15px;
 }
 
-.text {
+.text__door {
   margin-left: 16px;
   color: #1b1c21;
   font-size: 16px;
@@ -915,9 +915,8 @@ a {
 @media (min-width: 768px){
   
 .swiper {
-  width: 100%;
-  height: 400px;
-  margin-left:0;
+  height: 430px;
+
   
  
 }
@@ -927,7 +926,7 @@ a {
 .swiper-slide {
   width: 240px !important;
   height: 72px;
-  margin-top: 16px;
+  margin-top: 24px;
 
 }
 
@@ -1023,7 +1022,7 @@ a {
 
 }
 
-.middle-header {
+.h1 {
   font-weight:normal;
   font-size: 16px;
   line-height: 24px;
@@ -1031,24 +1030,47 @@ a {
   text-transform: uppercase;
   margin:0;
   margin-top: 16px;
-  margin-left: auto;
-  margin-right:auto;
+  margin-left: 16px;
   width:288px;
   padding-bottom: 16px;
   
 
 }
 
-@media (min-width: 400px){
-  .middle-header {
+@media (min-width: 400px) and (max-width: 768px){
+  .h1 {
   width: 360px;
   
   }
 }
 
+
+@media (min-width: 768px){
+  .h1 {
+   
+    width:770px;
+    margin-left: auto;
+    margin-right: auto;
+
+  
+  }
+}
+
+
+@media (min-width: 1120px){
+  .h1 {
+    width:1056px;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+}
+
+
 .products {
   min-width:320px;
   height:234px;
+  background-color: #F8F8F8;
 }
 
 @media (min-width: 768px){
@@ -1079,7 +1101,8 @@ a {
   flex-wrap: wrap;
   justify-content: space-around;
   margin-left:auto;
-  margin-right: auto;
+  margin-right:auto;
+  
   overflow: hidden;
 
 }
@@ -1133,12 +1156,70 @@ a {
   display: flex;
   border: #f8f8f8;
   background-color: #f8f8f8;
-  margin-left:10%;
+  margin-left: -8px;
 }
 
 
 }
 
+.door__icon {
+  
+
+  width: 24px;
+  height: 24px;
+
+  margin-top: 15px;
+
+
+}
+
+.door__icon-rotate{
+  transform: rotate(180deg);
+}
+
+
+
+.middle-header {
+  min-width: 320px;
+  height: 80px;
+  background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+}
+
+@media (min-width: 768px){
+
+  
+.middle-header {
+  margin-left:32px;
+  height: 56px;
+  background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
+  
+}
+}
+
+
+@media (min-width: 1120px){
+
+  
+.middle-header {
+ 
+  background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+  
+}
+}
+
+.button-wrapper{
+  width: 770px;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+
+@media (min-width: 1120px){
+  
+.button-wrapper{
+  width: 1056px;
+}
+}
 /*
 @media (min-width:0) and (max-width: 1120px){
 

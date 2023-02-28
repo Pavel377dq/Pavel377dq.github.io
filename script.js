@@ -1,6 +1,8 @@
 var changingMenu = document.querySelector('.swiper-wrapper');
 var buttonDoor = document.querySelector('.door');
 var swiperWrapper = document.getElementsByClassName('swiper-wrapper');
+var text = buttonDoor.querySelector('.text__door');
+var doorIcon = buttonDoor.querySelector('.door__icon');
 var swiperVariable ;
 var isOpen= 0;
 
@@ -14,10 +16,17 @@ var isOpen= 0;
       swiperWrapper[0].style = "overflow: visible";
       isOpen= 1;
       if (window.matchMedia("(min-width: 1120px)and (max-width: 1980px)").matches) {
-         buttonDoor.style = "margin-top: 100px;"
+         buttonDoor.style = "margin-top: 100px;";
+         text.textContent = 'Скрыть';
+         doorIcon.classList.add('door__icon-rotate');
+         console.log(doorIcon.style );
       }
       else {
-        buttonDoor.style = "margin-top: 150px;"
+       
+        buttonDoor.style = "margin-top: 180px;"
+        text.textContent = 'Скрыть';
+        doorIcon.classList.add('door__icon-rotate');
+        console.log(doorIcon.style );
       }
 
     }
@@ -25,8 +34,11 @@ var isOpen= 0;
       console.log(swiperWrapper[0].style);
       console.log('hidden');
       swiperWrapper[0].style = "overflow: hidden";
-      buttonDoor.style = "margin-top: 0;"
+      buttonDoor.style = "margin-top: 0;";
       isOpen= 0;
+      text.textContent = 'Показать всё';
+      doorIcon.classList.remove('door__icon-rotate');
+      console.log(doorIcon.style );
     }
 
   });
@@ -78,7 +90,8 @@ window.addEventListener("resize", function() {
     buttonDoor.style = "margin-top: 0;"
     isOpen = 0;
     
-
+    text.textContent = 'Показать всё';
+    doorIcon.classList.remove('door__icon-rotate');
     swiperWrapper[0].style = "overflow: visible";
     
     if(swiperVariable ===undefined){
@@ -86,21 +99,37 @@ window.addEventListener("resize", function() {
     }
       
   } 
-});
 
- window.addEventListener("resize", function() {
-    if (window.matchMedia("(min-width: 768px)and (max-width: 1980px)").matches) {
+  if (window.matchMedia("(min-width: 768px)and (max-width: 1980px)").matches) {
      
-        if(swiperVariable!==undefined){
-            console.log("good good")
-            swiperVariable.destroy(true, true);
-            swiperVariable = undefined;
-        }
+    if(swiperVariable!==undefined){
         
+        swiperVariable.destroy(true, true);
+        swiperVariable = undefined;
+    }
+    
+
+    
+
+  
+} 
+
+if (window.matchMedia("(min-width: 768px)and (max-width: 1120px)").matches) {
    
-        
- 
-      
-    } 
+  if(isOpen === 1){
+  buttonDoor.style = "margin-top: 180px;";
+  }
+
+  
+} 
+
+if (window.matchMedia("(min-width: 1120px)and (max-width: 1980px)").matches) {
+   
+     if(isOpen ===1){
+  buttonDoor.style = "margin-top: 100px;";
+     }
+
+  
+} 
 });
 
