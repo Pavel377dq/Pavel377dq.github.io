@@ -118,6 +118,7 @@ if (window.matchMedia("(min-width: 768px)and (max-width: 1120px)").matches) {
    
   if(isOpen === 1){
   buttonDoor.style = "margin-top: 180px;";
+  swiperWrapper[0].style = "overflow: visible";
   }
 
   
@@ -127,6 +128,7 @@ if (window.matchMedia("(min-width: 1120px)and (max-width: 1980px)").matches) {
    
      if(isOpen ===1){
   buttonDoor.style = "margin-top: 100px;";
+  swiperWrapper[0].style = "overflow: visible";
      }
 
   
