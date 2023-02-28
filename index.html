@@ -1,67 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>task15</title>
-  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task15</title>
 
-<link href="
+    <link
+      href="
 https://cdn.jsdelivr.net/npm/swiper@9.0.5/swiper-bundle.min.css
-" rel="stylesheet">
+"
+      rel="stylesheet"
+    />
 
-<link rel="stylesheet" type="text/css" href="styles.css" />
-</head>
-<body>
-<article class="products">
-<header class="middle-header">
-   <h1 class="h1">Ремонт техники различных брендов</h1>
-</header>
-   
-   <div class="swiper">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide"><div class="swiper-slide__wrap"><img src="images/Lenovo.svg" alt=""><a class="link" href="#"></a></div></div>
-        <div class="swiper-slide"><div class="swiper-slide__wrap"><img src="images/samsung.svg" alt=""><a class="link" href="#"></a></div></div>
-        <div class="swiper-slide"><div class="swiper-slide__wrap"><img src="images/apple.svg" alt=""><a class="link" href="#"></a></div></div>
-        <div class="swiper-slide"><div class="swiper-slide__wrap"><img src="images/viewsonic.svg" alt=""><a class="link" href="#"></a></div></div>
-        <div class="swiper-slide"><div class="swiper-slide__wrap"><img src="images/bosh.svg" alt=""><a class="link" href="#"></a></div></div>
-        <div class="swiper-slide"><div class="swiper-slide__wrap"><img src="images/hp.svg" alt=""><a class="link" href="#"></a></div></div>
-        <div class="swiper-slide"><div class="swiper-slide__wrap"><img src="images/acer.svg" alt=""><a class="link" href="#"></a></div></div>
-        <div class="swiper-slide"><div class="swiper-slide__wrap"><img src="images/sony.svg" alt=""><a class="link" href="#"></a></div></div>
-        <div class="swiper-slide"><div class="swiper-slide__wrap"><img src="images/Lenovo.svg" alt=""><a class="link" href="#"></a></div></div>
-        <div class="swiper-slide"><div class="swiper-slide__wrap"><img src="images/samsung.svg" alt=""><a class="link" href="#"></a></div></div>
-        <div class="swiper-slide"><div class="swiper-slide__wrap"><img src="images/apple.svg" alt=""><a class="link" href="#"></a></div></div>
-        <div class="swiper-slide"><div class="swiper-slide__wrap"><img src="" alt=""><a class="link" href="#"></a></div></div>
-        
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <article class="products-repair">
+      <header class="header-wrap">
+        <h1 class="header-wrap__header">Ремонт техники различных брендов</h1>
+      </header>
+
+      <div class="swiper repair-elements products-repair__repair-elements">
+        <!-- Additional required wrapper -->
+        <ul class="swiper-wrapper repair-wrap list-reset">
+          <!-- Slides -->
+          <li class="swiper-slide repair-elements__repair-element">
+            <div class="repair-elements__wrap">
+              <img src="images/Lenovo.svg" alt="" /><a
+                class="link"
+                href="#"
+              ></a>
+            </div>
+          </li>
+          <li class="swiper-slide repair-elements__repair-element">
+            <div class="repair-elements__wrap">
+              <img src="images/samsung.svg" alt="" /><a
+                class="link"
+                href="#"
+              ></a>
+            </div>
+          </li>
+          <li class="swiper-slide repair-elements__repair-element">
+            <div class="repair-elements__wrap">
+              <img src="images/apple.svg" alt="" /><a class="link" href="#"></a>
+            </div>
+          </li>
+          <li class="swiper-slide repair-elements__repair-element">
+            <div class="repair-elements__wrap">
+              <img src="images/viewsonic.svg" alt="" /><a
+                class="link"
+                href="#"
+              ></a>
+            </div>
+          </li>
+          <li class="swiper-slide repair-elements__repair-element">
+            <div class="repair-elements__wrap">
+              <img src="images/bosh.svg" alt="" /><a class="link" href="#"></a>
+            </div>
+          </li>
+          <li class="swiper-slide repair-elements__repair-element">
+            <div class="repair-elements__wrap">
+              <img src="images/hp.svg" alt="" /><a class="link" href="#"></a>
+            </div>
+          </li>
+          <li class="swiper-slide repair-elements__repair-element">
+            <div class="repair-elements__wrap">
+              <img src="images/acer.svg" alt="" /><a class="link" href="#"></a>
+            </div>
+          </li>
+          <li class="swiper-slide repair-elements__repair-element">
+            <div class="repair-elements__wrap">
+              <img src="images/sony.svg" alt="" /><a class="link" href="#"></a>
+            </div>
+          </li>
+          <li class="swiper-slide repair-elements__repair-element">
+            <div class="repair-elements__wrap">
+              <img src="images/Lenovo.svg" alt="" /><a
+                class="link"
+                href="#"
+              ></a>
+            </div>
+          </li>
+          <li class="swiper-slide repair-elements__repair-element">
+            <div class="repair-elements__wrap">
+              <img src="images/samsung.svg" alt="" /><a
+                class="link"
+                href="#"
+              ></a>
+            </div>
+          </li>
+          <li class="swiper-slide repair-elements__repair-element">
+            <div class="repair-elements__wrap">
+              <img src="images/apple.svg" alt="" /><a class="link" href="#"></a>
+            </div>
+          </li>
+          <li class="swiper-slide repair-elements__repair-element">
+            <div class="repair-elements__wrap">
+              <img src="" alt="" /><a class="link" href="#"></a>
+            </div>
+          </li>
+        </ul>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <div class="button-wrapper">
+          <button class="door">
+            <img src="images/expand.svg" class="door__icon" />
+            <p class="text__door">Показать всё</p>
+          </button>
+        </div>
       </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
-    
-     
-     <div class="button-wrapper">
-      <button class="door">
-         <img src="images/expand.svg" class="door__icon" />
-         <p class="text__door">Показать всё</p>
-       </button>
-      </div>
-      
-    </div>
-   
-  </div>
-   
+    </article>
 
-  
-   </article>
-
-  
-    
-    
     <script src="
     https://cdn.jsdelivr.net/npm/swiper@9.0.5/swiper-bundle.min.js
     "></script>
-   <script type="module" src="script.js"></script>
-   
-</body>
+    <script type="module" src="script.js"></script>
+  </body>
 </html>
