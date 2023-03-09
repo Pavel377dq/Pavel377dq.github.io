@@ -17,9 +17,137 @@
     href="styles.css"
   />
   
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
   </head>
   <body>
-    
+    <div class="modals">
+      <div class="modals__message">
+      <div class="clean-list">
+        <button class="button clean-list__button">
+          <img src="images/close.svg" class="button__close" />
+        </button>
+
+      </div>
+      <aside class="request-message">
+        <button class="button request-message__button">
+          <img src="images/close.svg" class="button__close" />
+        </button>
+          <h1 class="feedback">
+            Обратная связь
+          </h1>
+          <form class="form request-message__form" action="" class="data">
+            <input class="form__text" placeholder="Имя" type="text">
+            <input class="form__text" placeholder="Телефон" type="text">
+            <input class="form__text" placeholder="Электронная почта"type="text">
+            <textarea class="form__text" placeholder="Сообщение"></textarea>
+            <span class="modals__text">Нажимая “отправить”, вы даете согласие на <span class="color">обработку персональных данных</span> и соглашаетесь с нашей <span class="color">политикой конфиденциальности</span></span>
+            <a class="send">ОТПРАВИТЬ</a>
+
+          </form>
+      </aside>
+      </div>
+      <div class="modals__call">
+        <div class="clean-list">
+          <button class="button clean-list__button">
+            <img src="images/close.svg" class="button__close" />
+          </button>
+  
+        </div>
+        <aside class="request-call">
+          <button class="button request-call__button">
+            <img src="images/close.svg" class="button__close" />
+          </button>
+            <h1 class="feedback">
+              Заказать звонок
+            </h1>
+            <form class="form request-call__form" action="" class="data">
+              <input class="form__text" placeholder="Телефон" type="text">
+              <span class="modals__text">Нажимая “отправить”, вы даете согласие на <span class="color">обработку персональных данных</span> и соглашаетесь с нашей <span class="color">политикой конфиденциальности</span></span>
+              <a class="send">ОТПРАВИТЬ</a>
+  
+            </form>
+        </aside>
+      </div>
+    </div>   
+    <aside class="pop-up-menu">
+      <header class="pop-up-menu__header-aside">
+        <div class="wrap pop-up-menu__wrap">
+          <button class="button wrap__button">
+            <img src="images/close.svg" class="button__close" />
+          </button>
+
+          <img
+            src="images/Group.svg"
+            class="logo wrap__logo pop-up-menu__logo"
+          />
+        </div>
+
+        <button class="button pop-up-menu__button">
+          <img
+            src="images/new-search.svg"
+            class="new-search pop-up-menu__new-search"
+          />
+        </button>
+      </header>
+      <nav class="pop-up-menu__navigation">
+      <ul class="pop-up-menu__list">
+        <li class="list__item">
+          <a class="list__text" href="#">Ремонт техники</a>
+        </li>
+        <li class="list__item">
+          <a class="list__text" href="#">Услуги и сервисы</a>
+        </li>
+        <li class="list__item">
+          <a class="list__text" href="#">Корпоративным клиентам</a>
+        </li>
+        <li class="list__item">
+          <a class="list__text" href="#">Продавцам техники</a>
+        </li>
+        <li class="list__item"><a class="list__text" href="#">Партнерам</a></li>
+        <li class="list__item">
+          <a class="list__text" href="#">Производителям</a>
+        </li>
+        <li class="list__item">
+          <a class="list__text" href="#">Наши сервисные центры</a>
+        </li>
+        <li class="list__item"><a class="list__text" href="#">Контакты</a></li>
+      </ul>
+    </nav>
+
+      <footer class="pop-up-menu__footer">
+        <ul class="list-buttons pop-up-menu__list-buttons">
+          <li>
+            <button class="button list-buttons__button">
+              <img src="images/phone_icon.svg" class="button__phone-icon" />
+            </button>
+          </li>
+
+          <li>
+            <button class="button list-buttons__button">
+              <img src="images/message_icon.svg" class="button__message-icon" />
+            </button>
+          </li>
+
+          <li>
+            <button class="button list-buttons__button">
+              <img src="images/person_icon.svg" class="button__person-icon" />
+            </button>
+          </li>
+        </ul>
+
+        <ul class="contacts pop-up-menu__contacts">
+          <li><a href="#" class="mail contacts__mail">mail@cps.com</a></li>
+          <li><a href="#" class="number contacts__number">8 800 890 8900</a></li>
+        </ul>
+
+        <ul class="languages">
+          <li class="languages__item"><button class="languages__button">RU</button></li>
+          <li class="languages__item"><button class="languages__button">EN</button></li>
+          <li class="languages__item"><button class="languages__button">CH</button></li>
+        </div>
+      </ul>
+    </aside>
+    <article class = "main-information">
     <header class="header">
       <div class="wrap header__wrap-margin-left divider-one">
         <button class="button wrap__button">
@@ -70,7 +198,7 @@
       <div class="top-menu navigation__top-menu">
         <h1 class="header-inner top-menu__header-inner">Услуги и сервисы</h1>
 
-        <div class="wrap top-menu__wrap">
+        <div class="wrap top-menu__wrap wrap--space">
           <button class="top-menu__button">
             <span class="option_text wrap__option_text-1">Оставить заявку</span>
             <button class="button wrap__button-one button--display-top-menu">
@@ -115,17 +243,20 @@
             партнера, что подтверждает большоеколичество постоянных клиентов. Мы
             гордимся тем, что к намобращаются по рекомендациям и, в свою
             очередь, советуют нас родным и близким.
+            <br /><br />
+            Мы успешно работаем с 1992 года и заслужили репутацию 
           </p>
 
-          <button class="next">
-            <img src="images/expand.svg" class="next__icon" />
-            <p class="text">Читать далее</p>
+          <button class="expand">
+            <img src="images/expand.svg" class="expand__icon" />
+            <p class="expand__text">Читать далее</p>
           </button>
         </div>
 
         <img src="images/live_icon.jpg" class="live-icon" />
       </section>
     </main>
+
     <article class="products-repair"><!--Заменить все products на logo-->
       <header class="header-wrap">
         <h1 class="header-wrap__header">Ремонт техники различных брендов</h1>
@@ -372,6 +503,10 @@
         <p class="major-footer__center">Политика конфиденциальности</p>
         <p class="major-footer__end">Информация, размещенная на данной странице, не является публичной офертой</p>
     </footer>
+
+    </article>
+
+
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script type="module" src="script.js"></script>
  
