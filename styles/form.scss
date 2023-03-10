@@ -1,0 +1,27 @@
+.form__text {
+  display: block;
+  font-family: TTLakes;
+  margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 288px;
+  height: 48px;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 16px;
+}
+
+@media (min-width: 1440px) {
+  .form__text {
+    width: 376px;
+  }
+}
+
+.form__text:nth-child(4) {
+  font-size: 16px;
+  line-height: 24px;
+  height: 118px;
+  padding-top: 12px;
+}

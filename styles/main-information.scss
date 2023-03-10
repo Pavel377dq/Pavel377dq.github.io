@@ -1,0 +1,9 @@
+@media (min-width: 1440px) {
+  .main-information {
+    display: flex;
+    flex-direction: column;
+    min-width: 1120px;
+    max-width: 1660px;
+    flex-grow: 1;
+  }
+}
