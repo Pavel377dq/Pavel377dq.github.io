@@ -1,0 +1,22 @@
+.divider-one::after {
+  content: "";
+  display: table;
+  width: 2px;
+  height: 32px;
+  background: #eaeaea;
+  border-radius: 1px;
+  position: absolute;
+  left: 50%;
+}
+
+@media (min-width: 768px) {
+  .divider-one::after {
+    display: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .divider-one::after {
+    display: none;
+  }
+}

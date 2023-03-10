@@ -5,7 +5,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
 
-  mode: 'development',
+  mode: 'production',
   // Входной файл
   entry: [
     './src/index.js'
@@ -24,6 +24,8 @@ module.exports = {
   module: {
     rules: [
       // Транспилируем js с babel
+
+
       {
         test: /\.js$/,
         include: path.resolve(__dirname, 'src/js'),
@@ -61,16 +63,20 @@ module.exports = {
         }
       },
 
+      
       // Подключаем картинки из css
       {
         test: /\.(svg|png|jpg|jpeg|webp)$/,
         use: [
-          {
-            loader: 'file-loader',
+          
+    'file-loader','url-loader'
         
-          },
+         
         ]
+
+
       },
+     
     ],
   },
   plugins: [

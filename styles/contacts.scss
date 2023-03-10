@@ -1,0 +1,16 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  height: 68px;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.contacts__number {
+  font-weight: bold;
+  color: #1b1c21;
+  font-size: 24px;
+  line-height: 32px;
+}

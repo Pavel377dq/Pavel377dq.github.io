@@ -1,0 +1,26 @@
+.order {
+  display: block;
+  height: 32px;
+  width: 119px;
+  background-color: #ff3e79;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 32px;
+  color: #ffffff;
+  position: relative;
+  padding-left: 12px;
+  margin-right: 16px;
+}
+
+.order__image {
+  position: absolute;
+  right: 11px;
+  bottom: 12px;
+}
+
+@media (min-width: 768px) {
+  .order {
+    margin-top: 10px;
+  }
+}

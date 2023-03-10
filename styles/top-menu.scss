@@ -1,0 +1,34 @@
+.top-menu {
+  display: flex;
+  min-width: 320px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 1440px) {
+  .top-menu {
+    min-width: 1120px;
+  }
+}
+
+.top-menu__button {
+  display: flex;
+  font-family: TTLakes;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background-color: #f8f8f8;
+}
+
+.top-menu__header-inner {
+  margin: 0;
+}
+
+.top-menu__wrap {
+  margin-right: 6px;
+  height: 100%;
+  position: relative;
+  right: 30px;
+}

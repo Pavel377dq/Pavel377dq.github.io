@@ -1,0 +1,53 @@
+.modals__message {
+  display: none;
+  z-index: 10;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.modals__message--visible {
+  display: flex;
+}
+
+@media (min-width: 1440px) {
+  .modals__message {
+    width: 100%;
+    top: -15px;
+  }
+}
+
+.modals__call {
+  display: none;
+  z-index: 10;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.modals__call--visible {
+  display: flex;
+}
+
+@media (min-width: 1440px) {
+  .modals__call {
+    width: 100%;
+    top: -15px;
+  }
+}
+
+.modals__text {
+  width: 288px;
+  height: 64px;
+  display: block;
+  color: #7e7e82;
+  margin: 0 auto;
+  margin-bottom: 23px;
+}
+
+@media (min-width: 1440px) {
+  .modals__text {
+    width: 376px;
+    height: 48px;
+  }
+}

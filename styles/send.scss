@@ -1,0 +1,27 @@
+.send {
+  display: block;
+  height: 32px;
+  width: 136px;
+  background-color: #ff3e79;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 32px;
+  color: #ffffff;
+  padding-left: 12px;
+  margin-top: 54px;
+  margin-right: 16px;
+  margin-left: 168px;
+  position: relative;
+}
+.send__image {
+  position: absolute;
+  right: 11px;
+  bottom: 12px;
+}
+
+@media (min-width: 1440px) {
+  .send {
+    margin-left: 272px;
+  }
+}
