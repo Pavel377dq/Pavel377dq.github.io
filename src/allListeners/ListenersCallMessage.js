@@ -3,12 +3,13 @@ function ListenersCallMessage(
   closeSmallWidth,
   closeBigWidth,
   modalWindow,
-  modalWindowMod
+  modalWindowMod,modalToClose
 ) {
   let buttonOpen = document.querySelector(icon);
   let buttonCloseSmall = document.querySelector(closeSmallWidth);
   let buttonCloseBig = document.querySelector(closeBigWidth);
   let modal = document.querySelector(modalWindow);
+  let modalClose = document.querySelector(modalToClose);
 
   buttonOpen.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -37,6 +38,25 @@ function ListenersCallMessage(
       modal.classList.remove(modalWindowMod);
     }
   });
+
+  document.addEventListener("click", (evt) => {
+    const withinBoundaries = evt.composedPath().includes(modalClose);
+
+    if (!withinBoundaries && modal.classList.contains(modalWindowMod)) {
+      modal.classList.remove(modalWindowMod);
+    }
+  });
+
+
+  
+  document.addEventListener("keydown", (evt)=> {
+    if(evt.key === "Escape") {
+        // write your logic here.
+        modal.classList.remove(modalWindowMod);
+    }
+  }
+  );
+  
 }
 
 

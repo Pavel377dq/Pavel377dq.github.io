@@ -29,6 +29,15 @@
   cursor: pointer;
 }
 
+
+
 .languages__item:hover {
   color: #7e7e82;
 }
+
+
+
+.languages__item:nth-child(1) {
+  color: #7e7e82;
+}
+

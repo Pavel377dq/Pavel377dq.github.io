@@ -47,6 +47,7 @@ import "./styles/swiper.scss";
 import "./styles/technique-elements.scss";
 import "./styles/top-menu.scss";
 import "./styles/wrap.scss";
+import "./styles/active-item.scss";
 import Listeners from "./allListeners/eventListeners.js";
 import ListenersPopUp from "./allListeners/ListenersPopUp.js";
 import ListenersCallMessage from "./allListeners/ListenersCallMessage.js";
@@ -81,19 +82,19 @@ Listeners(
 ListenersPopUp();
 
 ListenersCallMessage(
-  ".list-buttons__button .button__phone-icon",
+  ".button__phone",
   ".request-call__button",
   ".modals__call .clean-list__button",
   ".modals__call",
-  "modals__call--visible"
+  "modals__call--visible",".request-call"
 );
 
 ListenersCallMessage(
-  ".list-buttons__button .button__message-icon",
+  ".button__message",
   ".request-message__button",
   ".modals__message .clean-list__button",
   ".modals__message",
-  "modals__message--visible"
+  "modals__message--visible",".request-message"
 );
 
 ListenerMainText();

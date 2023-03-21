@@ -17,6 +17,15 @@ function ListenersPopUp() {
     popUpMenu.classList.remove("pop-up-menu--visible");
   });
 
+  
+  document.addEventListener("keydown", (evt)=> {
+    if(evt.key === "Escape") {
+        // write your logic here.
+        popUpMenu.classList.remove("pop-up-menu--visible");
+    }
+  }
+  );
+
   document.addEventListener("click", (e) => {
     const withinBoundaries = e.composedPath().includes(popUpMenu);
 

@@ -64,7 +64,6 @@ function Listeners(
       window.matchMedia("(min-width: 768px)and (max-width: 1980px)").matches
     ) {
       if (swiperVariable1 !== undefined) {
-        console.log(swiperVariable1);
         swiperVariable1[0].destroy(true, true);
         swiperVariable1[1].destroy(true, true);
         swiperVariable1[2].destroy(true,true);

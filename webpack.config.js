@@ -25,7 +25,6 @@ module.exports = {
     rules: [
       // Транспилируем js с babel
 
-
       {
         test: /\.js$/,
         include: path.resolve(__dirname, 'src/js'),
@@ -37,7 +36,7 @@ module.exports = {
           }
         }
       },
-
+      
       {
         test: /\.css$/,
         use: [ 'style-loader', 'css-loader' ]
@@ -62,6 +61,8 @@ module.exports = {
           filename : 'fonts/[name][ext]',
         }
       },
+
+     
 
       
       // Подключаем картинки из css
@@ -106,4 +107,10 @@ module.exports = {
         
       }),
   ],
+
+   
+  devServer: {
+    port: 4200
+
+  },
 };

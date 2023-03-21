@@ -19,6 +19,14 @@
   left: 0px;
   transition-duration: 2s;
 }
+.list__item:nth-child(2)::before{
+  content: "";
+  height: 32px;
+  width: 4px;
+  border-color: #41f6d7;
+  background-color: #41f6d7;
+
+}
 
 .list__item:hover::before {
   content: "";

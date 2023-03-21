@@ -29,7 +29,7 @@
           </button>
           <h1 class="feedback">Обратная связь</h1>
           <form class="form request-message__form" action="" class="data">
-            <input class="form__text" placeholder="Имя" type="text" />
+            <input autofocus class="form__text" placeholder="Имя" type="text" />
             <input class="form__text" placeholder="Телефон" type="text" />
             <input
               class="form__text"
@@ -62,7 +62,7 @@
           </button>
           <h1 class="feedback">Заказать звонок</h1>
           <form class="form request-call__form" action="" class="data">
-            <input class="form__text" placeholder="Телефон" type="text" />
+            <input autofocus class="form__text" placeholder="Телефон" type="text" />
             <span class="modals__text"
               >Нажимая “отправить”, вы даете согласие на
               <span class="color">обработку персональных данных</span> и
@@ -83,11 +83,11 @@
           <button class="button wrap__button">
             <img src="images/close.svg" class="button__close" />
           </button>
-
+          <a href='index.html'>
           <img
             src="images/Group.svg"
             class="logo wrap__logo pop-up-menu__logo"
-          />
+          /></a>
         </div>
 
         <button class="button pop-up-menu__button">
@@ -129,13 +129,13 @@
       <footer class="pop-up-menu__footer">
         <ul class="list-buttons pop-up-menu__list-buttons">
           <li>
-            <button class="button list-buttons__button">
+            <button class="button button__phone list-buttons__button">
               <img src="images/phone_icon.svg" class="button__phone-icon" />
             </button>
           </li>
 
           <li>
-            <button class="button list-buttons__button">
+            <button class="button button__message list-buttons__button">
               <img src="images/message_icon.svg" class="button__message-icon" />
             </button>
           </li>
@@ -148,15 +148,15 @@
         </ul>
 
         <ul class="contacts pop-up-menu__contacts">
-          <li><a href="#" class="mail contacts__mail">mail@cps.com</a></li>
+          <li><a href="mailto:mail@cps.com" class="mail contacts__mail">mail@cps.com</a></li>
           <li>
-            <a href="#" class="number contacts__number">8 800 890 8900</a>
+            <a href="tel: +78008908900" class="number contacts__number">8 800 890 8900</a>
           </li>
         </ul>
 
         <ul class="languages">
           <li class="languages__item">
-            <button class="languages__button">RU</button>
+            <button class="languages__button languages__button--active">RU</button>
           </li>
           <li class="languages__item">
             <button class="languages__button">EN</button>
@@ -172,18 +172,18 @@
     <article class="main-information">
       <header class="header">
         <div class="wrap header__wrap-margin-left divider-one">
-          <button class="button wrap__button">
+          <button class="button button__burger wrap__button">
             <img src="images/rectangles.svg" class="button__rectangles" />
           </button>
 
-          <img src="images/Group.svg" class="logo wrap__logo" />
+          <a href='index.html'><img src="images/Group.svg" class="logo wrap__logo" /></a>
         </div>
 
         <div class="wrap header__wrap-margin-right divider-two">
           <ul class="list-buttons">
             <li>
               <button
-                class="button list-buttons__button button--display-none button--display-block"
+                class="button button__phone list-buttons__button button--display-none button--display-block"
               >
                 <img src="images/phone_icon.svg" class="button__phone-icon" />
               </button>
@@ -191,7 +191,7 @@
 
             <li>
               <button
-                class="button list-buttons__button button--display-block button--display-none"
+                class="button button__message list-buttons__button button--display-block button--display-none"
               >
                 <img
                   src="images/message_icon.svg"
@@ -202,18 +202,18 @@
 
             <li>
               <button
-                class="button list-buttons__button button--display-none button--display-block"
+                class="button list-buttons__button button__person button--display-none button--display-block"
               >
                 <img src="images/person_icon.svg" class="button__person-icon" />
               </button>
             </li>
           </ul>
 
-          <button class="button wrap__button-one">
+          <button class="button button__service wrap__button-one">
             <img src="images/icon-service.svg" class="button__service-icon" />
           </button>
 
-          <button class="button wrap__button-two">
+          <button class="button button__search wrap__button-two">
             <img src="images/icon-search.svg" class="button__search-icon" />
           </button>
         </div>
@@ -228,7 +228,7 @@
               <span class="option_text wrap__option_text-1"
                 >Оставить заявку</span
               >
-              <button class="button wrap__button-one button--display-top-menu">
+              <button class="button button__service wrap__button-one button--display-top-menu">
                 <img
                   src="images/icon-service.svg"
                   class="button__service-icon"
@@ -240,7 +240,7 @@
               <span class="option_text wrap__option_text-2"
                 >Статус ремонта</span
               >
-              <button class="button wrap__button-two button--display-top-menu">
+              <button class="button button__search wrap__button-two button--display-top-menu">
                 <img src="images/icon-search.svg" class="button__search-icon" />
               </button>
             </button>
@@ -290,15 +290,15 @@
       </main>
 
       <article class="products-repair">
-        <!--Заменить все products на logo-->
+        
         <header class="header-wrap">
           <h1 class="header-wrap__header">Ремонт техники различных брендов</h1>
         </header>
 
         <div class="swiper repair-elements products-repair__repair-elements">
-          <!-- Additional required wrapper -->
+         
           <ul class="swiper-wrapper repair-elements__list list-reset">
-            <!-- Slides -->
+          
             <li class="swiper-slide repair-elements__item">
               <div class="repair-elements__wrap">
                 <img src="images/Lenovo.svg" alt="" /><a class="link" href="#"
@@ -386,7 +386,7 @@
               </div>
             </li>
           </ul>
-          <!-- If we need pagination -->
+        
           <div class="swiper-pagination"></div>
 
           <div class="repair-elements__button-wrapper">
@@ -406,10 +406,9 @@
         <div
           class="swiper technique-elements products-repair__technique-elements"
         >
-          <!-- Additional required wrapper -->
+    
           <ul class="swiper-wrapper technique-elements__list list-reset">
-            <!--technique-elements__list--visible-->
-            <!-- Slides -->
+            
 
             <li class="swiper-slide technique-elements__item">
               <div class="technique-elements__wrap">
@@ -462,7 +461,7 @@
               </div>
             </li>
           </ul>
-          <!-- If we need pagination -->
+        
           <div class="swiper-pagination"></div>
 
           <div class="technique-elements__button-wrapper">
@@ -475,8 +474,8 @@
       </section>
 
       <div class="products-repair">
-        <header class="header-wrap">
-          <h1 class="header-wrap__header">Цены на услуги</h1>
+        <header class="header-wrap header-wrap--margin-top">
+          <h1 class="header-wrap__header ">Цены на услуги</h1>
         </header>
 
         <div class="swiper order-services products-repair__order-services">

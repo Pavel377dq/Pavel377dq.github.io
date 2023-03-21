@@ -1,3 +1,13 @@
+
+
+@media(min-width: 1440px){
+.modals{
+  position: absolute;
+  min-width: 1440px;
+
+}
+}
+
 .modals__message {
   display: none;
   z-index: 10;
@@ -8,11 +18,14 @@
 
 .modals__message--visible {
   display: flex;
+  overflow: hidden;
+  position: fixed;
+  
 }
 
 @media (min-width: 1440px) {
   .modals__message {
-    width: 100%;
+    min-width: 1440px;
     top: -15px;
   }
 }

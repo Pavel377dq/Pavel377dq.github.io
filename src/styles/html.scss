@@ -1,7 +1,27 @@
 html {
   box-sizing: border-box;
-  max-width: 1980px;
+  min-height: 1810px;
+  max-height: 1930px;
   font-family: TTLakes, TTLakes-Bold, TTLakes-Regular;
+}
+
+
+@media(min-width:768px ){
+  html {
+    min-height: 1857px;
+
+  }
+  
+}
+
+
+@media(min-width:1440px ){
+  html {
+
+min-height: 1990px;
+
+  }
+  
 }
 
 *,

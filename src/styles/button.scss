@@ -117,3 +117,52 @@
   transform: scale(2) rotate(720deg);
   opacity: 0.4;
 }
+
+.button__burger{
+  transition-duration: 3s,3s;
+  transition-property: opacity, transform;
+}
+
+
+.button__burger:hover {
+ opacity: 0.3;
+  transform: scale(1.3);
+}
+
+.button__service{
+  transition-duration: 3s,3s;
+  transition-property: background-color,border-color;
+}
+
+
+.button__service:hover{
+  background-color: green;
+  border-color: green;
+}
+
+.button__search {
+  transition-duration: 3s,3s;
+  transition-property: background-color,border-color;
+}
+
+
+.button__search:hover {
+  background-color: green;
+  border-color: green;
+
+}
+
+.top-menu__button:hover 
+.button__search:hover {
+  background-color: green;
+  border-color: green;
+
+}
+
+
+.top-menu__button:hover 
+.button__service:hover {
+  background-color: green;
+  border-color: green;
+
+}
