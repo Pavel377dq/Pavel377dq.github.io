@@ -4,18 +4,14 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-
-  mode: 'production',
   // Входной файл
   entry: [
-    './src/index.js'
+    './src/js/index.js'
   ],
 
   // Выходной файл
   output: {
-    filename: './bundle.js',
-    path: path.resolve(__dirname,'dist')
-   
+    filename: './js/bundle.js'
   },
 
   // Source maps для удобства отладки
@@ -24,7 +20,6 @@ module.exports = {
   module: {
     rules: [
       // Транспилируем js с babel
-
       {
         test: /\.js$/,
         include: path.resolve(__dirname, 'src/js'),
@@ -36,11 +31,6 @@ module.exports = {
           }
         }
       },
-      
-      {
-        test: /\.css$/,
-        use: [ 'style-loader', 'css-loader' ]
-     },
 
       // Компилируем SCSS в CSS
       {
@@ -56,34 +46,28 @@ module.exports = {
       // Подключаем шрифты из css
       {
         test: /\.(eot|ttf|woff|woff2)$/,
-        type      : 'asset/resource',
-        generator : {
-          filename : 'fonts/[name][ext]',
-        }
+        use: [
+          {
+            loader: 'file-loader?name=./fonts/[name].[ext]'
+          },
+        ]
       },
 
-     
-
-      
       // Подключаем картинки из css
       {
         test: /\.(svg|png|jpg|jpeg|webp)$/,
         use: [
-          
-    'file-loader','url-loader'
-        
-         
+          {
+            loader: 'file-loader?name=./static/[name].[ext]'
+          },
         ]
-
-
       },
-     
     ],
   },
   plugins: [
     // Подключаем файл html, стили и скрипты встроятся автоматически
     new HtmlWebpackPlugin({
-      title: 'Webpack 4 Starter',
+      title: 'Task 1.6',
       template: './src/index.html',
       inject: true,
       minify: {
@@ -98,19 +82,11 @@ module.exports = {
     }),
 
     // Копируем картинки
-    new CopyWebpackPlugin(
+    new CopyWebpackPlugin([
       {
-
-        patterns: [ {from: './src/images',
-        to: 'images'},
-      {from: './src/fonts', to: 'fonts'}]
-        
-      }),
+        from: './src/images',
+        to: 'images',
+      },
+    ])
   ],
-
-   
-  devServer: {
-    port: 4200
-
-  },
 };
