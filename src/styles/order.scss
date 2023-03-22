@@ -1,3 +1,6 @@
+$tablet: 768px;
+$desktop: 1440px;
+
 .order {
   display: block;
   height: 32px;
@@ -12,16 +15,14 @@
   padding-left: 12px;
   margin-right: 16px;
   cursor: pointer;
+
+  @media (min-width: $tablet) {
+    margin-top: 10px;
+  }
 }
 
 .order__image {
   position: absolute;
   right: 11px;
   bottom: 12px;
-}
-
-@media (min-width: 768px) {
-  .order {
-    margin-top: 10px;
-  }
 }

@@ -1,3 +1,6 @@
+$tablet: 768px;
+$desktop: 1440px;
+
 .top-menu {
   display: flex;
   min-width: 320px;
@@ -5,7 +8,7 @@
   align-items: center;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktop) {
   .top-menu {
     min-width: 1120px;
   }

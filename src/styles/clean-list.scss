@@ -1,18 +1,17 @@
+$desktop: 1440px;
+
 .clean-list {
   display: none;
   min-width: 1120px;
 
   min-height: 1770px;
   background-color: #ffffff;
-}
 
-@media (min-width: 1440px) {
-  .clean-list {
+  @media (min-width: $desktop) {
     display: block;
     opacity: 0.95;
   }
 }
-
 
 .clean-list__button {
   margin-left: 1027px;

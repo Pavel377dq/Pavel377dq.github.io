@@ -1,3 +1,6 @@
+$tablet: 768px;
+$desktop: 1440px;
+
 body {
   margin: 0 auto;
   padding: 0;
@@ -7,31 +10,23 @@ body {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden !important;
-}
-
-body {
- 
   min-height: 1810px;
   max-height: 1930px;
   flex-grow: 1;
-}
 
-@media (min-width: 768px) {
-  body {
+  @media (min-width: $tablet) {
     min-width: 768px;
     min-height: 1857px;
     max-width: 2300px;
   }
-}
 
-@media (min-width: 1440px) {
-  body {
+  @media (min-width: $desktop) {
     flex-grow: 1;
     min-width: 1440px;
     max-width: 1980px;
     min-height: 1990px;
     max-height: 2400px;
-    margin-left:0;
+    margin-left: 0;
     margin-right: auto;
     display: flex;
   }

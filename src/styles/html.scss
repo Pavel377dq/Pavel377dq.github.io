@@ -1,27 +1,19 @@
+$tablet: 768px;
+$desktop: 1440px;
+
 html {
   box-sizing: border-box;
   min-height: 1810px;
   max-height: 1930px;
   font-family: TTLakes, TTLakes-Bold, TTLakes-Regular;
-}
 
-
-@media(min-width:768px ){
-  html {
+  @media (min-width: $tablet) {
     min-height: 1857px;
-
   }
-  
-}
 
-
-@media(min-width:1440px ){
-  html {
-
-min-height: 1990px;
-
+  @media (min-width: $desktop) {
+    min-height: 1990px;
   }
-  
 }
 
 *,

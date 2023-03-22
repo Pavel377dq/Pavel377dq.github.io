@@ -1,3 +1,6 @@
+$tablet: 768px;
+$desktop: 1440px;
+
 .pop-up-menu {
   min-width: 320px;
   max-width: 360px;
@@ -11,31 +14,26 @@
   box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
   overflow: hidden;
   position: fixed;
-}
+  border: 1px solid transparent;
 
-.pop-up-menu--visible {
-  display: block;
-}
-
-@media (min-width: 768px) {
-  .pop-up-menu {
+  @media (min-width: $tablet) {
     width: 320px;
     position: fixed;
     height: 1024px;
-  
   }
-}
 
-@media (min-width: 1440px) {
-  .pop-up-menu {
+  @media (min-width: $desktop) {
     display: block;
     max-width: 320px;
     position: static;
     flex-grow: 1;
     box-shadow: none;
     min-height: 2025px;
-  
   }
+}
+
+.pop-up-menu--visible {
+  display: block;
 }
 
 .pop-up-menu__list-buttons {
@@ -61,20 +59,18 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .pop-up-menu__contacts {
     margin-bottom: 40px;
   }
 }
-
-
 
 .pop-up-menu__list {
   list-style-type: none;
   padding: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .pop-up-menu__list {
     margin-bottom: 268px;
   }
@@ -86,7 +82,7 @@
   margin-bottom: 25px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .pop-up-menu__header-aside {
     margin-bottom: 50px;
   }
@@ -102,7 +98,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktop) {
   .pop-up-menu__wrap .button {
     display: none;
   }
@@ -129,7 +125,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .pop-up-menu__logo {
     width: 97px;
     height: 51px;

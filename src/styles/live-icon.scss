@@ -1,18 +1,17 @@
+$tablet: 768px;
+$desktop: 1440px;
+
 .live-icon {
   width: 320;
   height: auto;
-}
 
-@media (min-width: 768px) {
-  .live-icon {
+  @media (min-width: $tablet) {
     border-radius: 5px;
     width: 360px;
     height: 259px;
   }
-}
 
-@media (min-width: 1440px) {
-  .live-icon {
+  @media (min-width: $desktop) {
     border-radius: 5px;
     width: 531.35px;
     height: 370px;
