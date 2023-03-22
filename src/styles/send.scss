@@ -1,3 +1,6 @@
+$tablet: 768px;
+$desktop: 1440px;
+
 .send {
   display: block;
   height: 32px;
@@ -20,7 +23,7 @@
   bottom: 12px;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktop) {
   .send {
     margin-left: 272px;
   }

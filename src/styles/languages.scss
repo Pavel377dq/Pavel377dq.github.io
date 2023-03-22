@@ -3,10 +3,8 @@
   margin: 0;
   list-style: none;
   margin-left: 16px;
-}
 
-@media (min-width: 360px) {
-  .languages {
+  @media (min-width: 360px) {
     margin-left: 24px;
   }
 }
@@ -15,6 +13,14 @@
   padding: 0;
   display: inline-block;
   margin-right: 3px;
+
+  &:hover {
+    color: #7e7e82;
+  }
+
+  &:nth-child(1) {
+    color: #7e7e82;
+  }
 }
 
 .languages__button {
@@ -28,16 +34,3 @@
   background-color: transparent;
   cursor: pointer;
 }
-
-
-
-.languages__item:hover {
-  color: #7e7e82;
-}
-
-
-
-.languages__item:nth-child(1) {
-  color: #7e7e82;
-}
-

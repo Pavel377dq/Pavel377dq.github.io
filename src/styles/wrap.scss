@@ -1,3 +1,6 @@
+$tablet: 768px;
+$desktop: 1440px;
+
 .wrap {
   display: flex;
   align-items: center;
@@ -12,14 +15,14 @@
   padding: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .wrap__button-one {
     margin-left: 20px;
     /*20px*/
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktop) {
   .wrap__button-one {
     margin-left: 8px;
     /*8px*/
@@ -30,7 +33,7 @@
   margin-left: 16px;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktop) {
   .wrap__option_text-1 {
     margin-left: 390px;
   }

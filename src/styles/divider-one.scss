@@ -1,3 +1,6 @@
+$tablet: 768px;
+$desktop: 1440px;
+
 .divider-one::after {
   content: "";
   display: table;
@@ -7,16 +10,12 @@
   border-radius: 1px;
   position: absolute;
   left: 50%;
-}
 
-@media (min-width: 768px) {
-  .divider-one::after {
+  @media (min-width: $tablet) {
     display: none;
   }
-}
 
-@media (min-width: 1440px) {
-  .divider-one::after {
+  @media (min-width: $desktop) {
     display: none;
   }
 }

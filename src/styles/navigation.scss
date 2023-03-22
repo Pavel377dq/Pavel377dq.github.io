@@ -1,10 +1,11 @@
+$tablet: 768px;
+$desktop: 1440px;
+
 .navigation {
   padding-left: 0;
   margin: 0;
-}
 
-@media (min-width: 1440px) {
-  .navigation {
+  @media (min-width: $desktop) {
     min-width: 1120px;
     max-width: 1660px;
     margin-top: 15px;
@@ -31,7 +32,7 @@
   height: 0;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktop) {
   .navigation__wrap {
     width: 100%;
   }
@@ -39,16 +40,12 @@
 
 .navigation__top-menu {
   margin-bottom: 20px;
-}
 
-@media (min-width: 768px) {
-  .navigation__top-menu {
+  @media (min-width: $tablet) {
     margin-bottom: 30px;
   }
-}
 
-@media (min-width: 1440px) {
-  .navigation__top-menu {
+  @media (min-width: $desktop) {
     margin-bottom: 6px;
   }
 }

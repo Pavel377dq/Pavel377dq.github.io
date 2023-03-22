@@ -1,4 +1,7 @@
-@media (min-width: 1440px) {
+$tablet: 768px;
+$desktop: 1440px;
+
+@media (min-width: $desktop) {
   .main-information {
     display: flex;
     flex-direction: column;

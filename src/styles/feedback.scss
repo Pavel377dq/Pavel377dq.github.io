@@ -1,3 +1,5 @@
+$desktop: 1440px;
+
 .feedback {
   font-size: 24px;
   line-height: 32px;
@@ -7,10 +9,8 @@
   width: 304px;
   padding-top: 10px;
   padding-left: 16px;
-}
 
-@media (min-width: 1440px) {
-  .feedback {
+  @media (min-width: $desktop) {
     position: relative;
     top: 32px;
   }

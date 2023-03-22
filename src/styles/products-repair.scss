@@ -1,3 +1,6 @@
+$tablet: 768px;
+$desktop: 1440px;
+
 .products-repair__repair-elements {
   margin-left: 16px;
 }
@@ -10,14 +13,14 @@
   margin-left: 16px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .products-repair__order-services {
     margin-left: 16px;
     margin-top: 63px;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktop) {
   .products-repair__order-services {
     margin-left: 16px;
     margin-top: 79px;
@@ -38,7 +41,7 @@
   margin-bottom: 140px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet) {
   .products-repair {
     height: 324px;
   }
@@ -48,7 +51,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktop) {
   .products-repair {
     height: 356px;
   }

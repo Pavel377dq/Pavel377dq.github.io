@@ -1,3 +1,6 @@
+$tablet: 768px;
+$desktop: 1440px;
+
 .form__text {
   display: block;
   font-family: TTLakes;
@@ -11,10 +14,8 @@
   font-size: 16px;
   line-height: 24px;
   padding-left: 16px;
-}
 
-@media (min-width: 1440px) {
-  .form__text {
+  @media (min-width: $desktop) {
     width: 376px;
   }
 }
