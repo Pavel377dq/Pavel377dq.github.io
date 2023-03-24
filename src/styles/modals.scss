@@ -15,6 +15,7 @@ $desktop: 1440px;
   position: absolute;
   right: 0;
   top: 0;
+  height: 100%;
 
   
 @media (min-width: $desktop) {
@@ -36,10 +37,10 @@ $desktop: 1440px;
 .modals__call {
   display: none;
   z-index: 10;
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
-
+  height: 100%;
   
 @media (min-width: $desktop) {
  
